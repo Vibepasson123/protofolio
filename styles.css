@@ -377,6 +377,39 @@ form .btn2{
 nav .fa-solid{
     display: none;
 }
+.skilllevel {
+    margin-top: 20px;
+    list-style-type: none;
+    padding: 0;
+  }
+  .skilllevel li {
+    margin-bottom: 20px;
+  }
+  .progress {
+    background-color: #262626;
+    border-radius: 5px;
+    height: 20px;
+    overflow: hidden;
+  }
+  .progress-bar {
+    background-color: #ff004f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .progress-bar p{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .skill-title {
+    font-weight: 400;
+    margin-bottom: 5px;
+  }
+  .skilllevel:hover {
+   transition: transform 0.5s ease-in-out; 
+  
+  }
 @media only screen and (max-width: 600px) {
     #header{
         background-image: url(assets/mobileBG.jpg);
