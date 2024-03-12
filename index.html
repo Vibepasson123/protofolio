@@ -15,13 +15,16 @@
         <div class="container">
             <nav>
                 <img src="assets/logo.png" class="logo">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#About">About</a></li>
-                    <li><a href="#Service">Service</a></li>
-                    <li><a href="#Protofolio">Portfolio</a></li>
-                    <li><a href="#Contact">Contact</a></li>
+                <ul id="sideBar">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#protofolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeTab()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openSideTab()"></i>
+
             </nav>
             <div class="header-text">
                 <p>Full-stack Developer </p>
@@ -71,86 +74,129 @@
             </div>
         </div>
     </div>
-
-
-
-<div id="services">
-    <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-            <div>
-                <i class="fas fa-code"></i>
-                <h2> Web Design</h2>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nisi dolorem perspiciatis quis tempore, voluptate tenetur amet porro libero dolorum. Et ea quibusdam minus earum voluptatibus aspernatur alias eos animi!</p>
-                <a href="#">learn More </a>
-            </div>
-            <div>
-                <i class="fas fa-crop-alt"></i>
-                <h2> Web Test</h2>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nisi dolorem perspiciatis quis tempore, voluptate tenetur amet porro libero dolorum. Et ea quibusdam minus earum voluptatibus aspernatur alias eos animi!</p>
-                <a href="#">learn More </a>
-            </div>
-            <div>
-                <i class="fas fa-mobile"></i>
-                <h2> Web Set</h2>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nisi dolorem perspiciatis quis tempore, voluptate tenetur amet porro libero dolorum. Et ea quibusdam minus earum voluptatibus aspernatur alias eos animi!</p>
-                <a href="#">learn More </a>
-            </div>
-        </div>
-    </div>
-</div>
-<div id="protofolio">
-    <div class="container">
-        <h1 class="sub-title">My Work</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="/assets/work1.jpg" alt="" >
-                <div class="layer">
-                    <h3>social Media App</h3>
-                    <P>
-                        The app connect you the the talented people arround the world 
-                    </P>
-                    <a href=""><i class="fas fa-link"></i></a>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2> Web Design</h2>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nisi dolorem perspiciatis
+                        quis tempore, voluptate tenetur amet porro libero dolorum. Et ea quibusdam minus earum
+                        voluptatibus aspernatur alias eos animi!</p>
+                    <a href="#">learn More </a>
                 </div>
-            </div>
-            <div class="work">
-                <img src="/assets/work2.jpg" alt="">
-                <div class="layer">
-                    <h3>Mobile Work</h3>
-                    <P>
-                        The app connect you the the talented people arround the world 
-                    </P>
-                    <a href=""><i class="fas fa-link"></i></a>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2> Web Test</h2>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nisi dolorem perspiciatis
+                        quis tempore, voluptate tenetur amet porro libero dolorum. Et ea quibusdam minus earum
+                        voluptatibus aspernatur alias eos animi!</p>
+                    <a href="#">learn More </a>
                 </div>
-            </div>
-            <div class="work">
-                <img src="/assets/work3.jpg" alt="">
-                <div class="layer">
-                    <h3>All Media App</h3>
-                    <P>
-                        The app connect you the the talented people arround the world 
-                    </P>
-                    <a href=""><i class="fas fa-link"></i></a>
+                <div>
+                    <i class="fas fa-mobile"></i>
+                    <h2> Web Set</h2>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nisi dolorem perspiciatis
+                        quis tempore, voluptate tenetur amet porro libero dolorum. Et ea quibusdam minus earum
+                        voluptatibus aspernatur alias eos animi!</p>
+                    <a href="#">learn More </a>
                 </div>
             </div>
         </div>
-     
     </div>
-</div>
+    <div id="protofolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="/assets/work1.jpg" alt="">
+                    <div class="layer">
+                        <h3>social Media App</h3>
+                        <P>
+                            The app connect you the the talented people arround the world
+                        </P>
+                        <a href=""><i class="fas fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/assets/work2.jpg" alt="">
+                    <div class="layer">
+                        <h3>Mobile Work</h3>
+                        <P> The app connect you the the talented people arround the world </P>
+                        <a href=""><i class="fas fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/assets/work3.jpg" alt="">
+                    <div class="layer">
+                        <h3>All Media App</h3>
+                        <P>
+                            The app connect you the the talented people arround the world
+                        </P>
+                        <a href=""><i class="fas fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> vibetech@gmail.com</p>
+                    <p><i class="fa-solid fa-envelope"></i> viveksah2sah@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"> </i> +351-920346688</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/vivek-sah-407254118/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="assets/vivekCv.pdf" download class="btn btn2">Download-Cv</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Vibetech</p>
+        </div>
+    </div>
     <script>
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        var sideBa = document.getElementById("sideBar");
 
-    function openTab(tabname){
-        for( tablink of tablinks){
-            tablink.classList.remove('active-links');
+        function openTab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove('active-links');
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove('active-tab');
+            }
+            event.currentTarget.classList.add('active-links');
+            document.getElementById(tabname).classList.add('active-tab');
         }
-        for( tabcontent of tabcontents){
-            tabcontent.classList.remove('active-tab');
+        function openSideTab() {
+            sideBa.style.right = "0%";
+
         }
-        event.currentTarget.classList.add('active-links');
-        document.getElementById(tabname).classList.add('active-tab');
-    }
+        function closeTab() {
+
+            sideBa.style.right = "-40%";
+
+        }
     </script>
 </body>
 
