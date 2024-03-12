@@ -46,27 +46,78 @@
                     <div class="tab-titles">
                         <p class="tab-links active-links" onclick="openTab('skills')">Skills</p>
                         <p class="tab-links" onclick="openTab('Euducations')">Euducations</p>
-                        <p class="tab-links" onclick="openTab('etc')">Etc</p>
+                        <p class="tab-links" onclick="openTab('Activity')">Activity logs</p>
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>Full-Stack Developer</span><Br>sample testx1</li>
-                            <li><span>Developer</span><Br>sample testx1 hjgkjhgk</li>
-                            <li><span>Stack </span><Br>sample testx1 jhgkjh</li>
+                            <li><span>Full-Stack Developer</span><Br>I excel as a seasoned full-stack developer with a
+                                strong emphasis on React Native development. My expertise lies in crafting dynamic and
+                                intuitive mobile applications, leveraging the power of React Native to deliver
+                                exceptional user experiences.</li>
+                            <li><span>Back-end Stack</span><Br>NEXT.js, Nest.js
+                                Express.js, SQl, Mongo-dB, PHP, Laravel, Docker,Mirth, HLSoup,HL7 </li>
+                            <li><span>Stack </span><Br>React Navigation, Redux, Axios,
+                                React Native Elements, React Native Vector Icons,
+                                React Native Firebase, React Native Camera, React Native Maps,Social
+                                Auth,Algolia,Docker,Google cloud
+                                Fastlane, RestApi , GraphQl, HTML, Bootstrap,Material Ui,React, Vue ,
+                                React
+                            </li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="Euducations">
                         <ul>
-                            <li><span>Full Developer</span><Br>sample testx1</li>
-                            <li><span>Dloper</span><Br>sample testx1 hjgkjhgk</li>
-                            <li><span>Sack </span><Br>sample testx1 jhgkjh</li>
+                            <li><span>Master in Healthcare Information Systems Management</span><Br>02-04-2016 –
+                                14-08-2018</li>
+                            <li><span>University</span><Br>Polytechnic institute of Leiria, Leiria (Portugal) &&
+                                Affiliate with Porto Medicine
+                                University</li>
+                            <li><span>Major subjects</span><Br>
+                                The clinical decision support system<Br>
+                                HL7<Br>
+                                Electronic Health Record<Br>
+                                Security of Clinical information system (Network Security methods and protocols)<Br>
+                                Clinical statistic<Br>
+                                Strategic Management of Medical Information Systems<Br>
+                                Data mining<Br>
+                                Biomedical imaging(PACS)(DICOM)<Br>
+                                Bioinformatics (DNA coding and reading) using R-commander (Ruby)<Br></li>
+                        </ul>
+                        <ul>
+                            <li><span>BBM(H)Bachelor in Hospital Management</span><Br>07-08-2012 – 15-06-2015</li>
+                            <li><span>University</span><Br>NSHM College of Management &Technology(AICTE
+                                approved)Durgapur West Bengal India).</li>
+                            <li><span>Major subjects</span><Br>
+                                Principles of Management<Br>
+                                Computing Laboratory<Br>
+                                Hospital Operation Management<Br>
+                                Health Economics Medical Record Science<Br>
+                                Epidemiology & Analysis of Health Information Data<Br>
+                                Management Information System<Br>
+                                Medical Ethics<Br>
+                                Medical Terminology<Br>
+                                Surgical Terminology<Br>
+                                Hospital Planning<Br>
+                                Financial Management<Br>
+                                Human Resource Management<Br></li>
                         </ul>
                     </div>
-                    <div class="tab-contents" id="etc">
+                    <div class="tab-contents" id="Activity">
                         <ul>
-                            <li><span>20021iu8ui</span><Br>sample testx1</li>
-                            <li><span>ghfhjgj</span><Br>sample testx1 hjgkjhgk</li>
-                            <li><span>76uygjygu </span><Br>sample testx1 jhgkjh</li>
+                            <li><span>PHP/Laravel</span><Br> Active working hours 3,698</li>
+                            <li><span>My-Sql/sql</span><Br> Active working hours 1,298</li>
+                            <li><span>JavaScript</span><Br> Active working hours 4,608</li>
+                            <li><span>TypesScript</span><Br> Active working hours 2,100</li>
+                            <li><span>React-Native</span><Br> Active working hours 3,200</li>
+                            <li><span>Redux</span><Br> Active working hours 400</li>
+                            <li><span>React Navigation,</span><Br> Active working hours 510</li>
+                            <li><span>GraphQl ,</span><Br> Active working hours 267</li>
+                            <li><span>React ,</span><Br> Active working hours 368</li>
+                            <li><span>HTML, Bootstrap,Material Ui ,</span><Br> Active working hours 569</li>
+                            <li><span>Node.js ,</span><Br> Active working hours 1269</li>
+                            <li><span>Express.js ,Nest.js,</span><Br> Active working hours 700</li>
+                            <li><span> Mirth, HLSoup,HL7,</span><Br> Active working hours 120</li>
+                               
                         </ul>
                     </div>
 
@@ -160,12 +211,13 @@
                     <a href="assets/vivekCv.pdf" download class="btn btn2">Download-Cv</a>
                 </div>
                 <div class="contact-right">
-                    <form>
+                    <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your Name" required>
                         <input type="email" name="Email" placeholder="Your Email" required>
                         <textarea name="Message" rows="6" required></textarea>
                         <button type="submit" class="btn btn2">Submit</button>
                     </form>
+                    <span id="msg"></span>
                 </div>
             </div>
         </div>
@@ -197,6 +249,24 @@
             sideBa.style.right = "-40%";
 
         }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwD1R2EGsM4xrwXEx2Raj6n4n0aF_4cH53FJ9GhKhrElTtEVjN65ESMWeOxYpPN6c417g/exec'
+        const form = document.forms['submit-to-google-sheet'];
+        const msg = document.getElementById('msg');
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully! 🚀"
+                    setTimeout(() => {
+                        msg.innerHTML("");
+                    }, 5000);
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
     </script>
 </body>
 
