@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/adaae62183.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="assets/logo.png" class="logo">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Service">Service</a></li>
+                    <li><a href="#Protofolio">Portfolio</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Full-stack Developer </p>
+                <h1> I'm <span>Vivek Kumar Sah</span>,<Br> A seasoned full-stack developer based in Portugal</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="assets/me.jpg" class="about-image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum veniam blanditiis accusamus
+                        recusandae doloribus modi esse quod. Voluptate natus tenetur, maxime sint consequatur iure
+                        provident aliquam distinctio illo consectetur eos!</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-links" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('Euducations')">Euducations</p>
+                        <p class="tab-links" onclick="openTab('etc')">Etc</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Full-Stack Developer</span><Br>sample testx1</li>
+                            <li><span>Developer</span><Br>sample testx1 hjgkjhgk</li>
+                            <li><span>Stack </span><Br>sample testx1 jhgkjh</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Euducations">
+                        <ul>
+                            <li><span>Full Developer</span><Br>sample testx1</li>
+                            <li><span>Dloper</span><Br>sample testx1 hjgkjhgk</li>
+                            <li><span>Sack </span><Br>sample testx1 jhgkjh</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="etc">
+                        <ul>
+                            <li><span>20021iu8ui</span><Br>sample testx1</li>
+                            <li><span>ghfhjgj</span><Br>sample testx1 hjgkjhgk</li>
+                            <li><span>76uygjygu </span><Br>sample testx1 jhgkjh</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2> Web Design</h2>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nisi dolorem perspiciatis quis tempore, voluptate tenetur amet porro libero dolorum. Et ea quibusdam minus earum voluptatibus aspernatur alias eos animi!</p>
+                <a href="#">learn More </a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2> Web Test</h2>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nisi dolorem perspiciatis quis tempore, voluptate tenetur amet porro libero dolorum. Et ea quibusdam minus earum voluptatibus aspernatur alias eos animi!</p>
+                <a href="#">learn More </a>
+            </div>
+            <div>
+                <i class="fas fa-mobile"></i>
+                <h2> Web Set</h2>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nisi dolorem perspiciatis quis tempore, voluptate tenetur amet porro libero dolorum. Et ea quibusdam minus earum voluptatibus aspernatur alias eos animi!</p>
+                <a href="#">learn More </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="protofolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="/assets/work1.jpg" alt="" >
+                <div class="layer">
+                    <h3>social Media App</h3>
+                    <P>
+                        The app connect you the the talented people arround the world 
+                    </P>
+                    <a href=""><i class="fas fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="/assets/work2.jpg" alt="">
+                <div class="layer">
+                    <h3>Mobile Work</h3>
+                    <P>
+                        The app connect you the the talented people arround the world 
+                    </P>
+                    <a href=""><i class="fas fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="/assets/work3.jpg" alt="">
+                <div class="layer">
+                    <h3>All Media App</h3>
+                    <P>
+                        The app connect you the the talented people arround the world 
+                    </P>
+                    <a href=""><i class="fas fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+     
+    </div>
+</div>
+    <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function openTab(tabname){
+        for( tablink of tablinks){
+            tablink.classList.remove('active-links');
+        }
+        for( tabcontent of tabcontents){
+            tabcontent.classList.remove('active-tab');
+        }
+        event.currentTarget.classList.add('active-links');
+        document.getElementById(tabname).classList.add('active-tab');
+    }
+    </script>
+</body>
+
+</html>
