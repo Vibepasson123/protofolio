@@ -22,7 +22,7 @@ body::-webkit-scrollbar {
     height: 100vh;
     background-image: url(assets/bg2.jpg);
     background-size: cover;
-    background-position: 'center';
+    background-position: center;
 }
 
 .container {
@@ -75,7 +75,6 @@ nav ul li a:hover::after {
 
 .header-text h1 {
     font-size: 60px;
-    font-size: 20px;
     font-weight: 300;
     font-family: 'Poppins', 'sans-serif';
 }
